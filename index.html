@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renewable Energy Sales Chatbot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              'brand-primary': '#00467F', // A deep, professional blue
+              'brand-primary-light': '#4A90E2', // A lighter blue for gradients
+              'brand-secondary': '#007A33', // A vibrant green for energy/sustainability
+              'brand-light': '#F0F4F8', // A very light grey-blue for backgrounds
+              'brand-dark': '#0A192F', // A dark navy for text and headers
+            },
+            backgroundImage: {
+               'grid-pattern': "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke-width='1' stroke='rgb(229 231 235 / 0.5)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E\")",
+            },
+            boxShadow: {
+              'glow-secondary': '0 0 15px 5px rgba(0, 122, 51, 0.3)',
+              'glow-primary': '0 0 15px 5px rgba(74, 144, 226, 0.4)',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.17.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-light font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
